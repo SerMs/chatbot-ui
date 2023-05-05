@@ -350,14 +350,14 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
   return (
     <div className="relative flex-1 overflow-hidden bg-white dark:bg-[#343541]">
       {!(apiKey || serverSideApiKeyIsSet) ? (
-        <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
+        <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[700px]">
           <div className="text-center text-4xl font-bold text-black dark:text-white">
-            Welcome to Chatbot UI
+            Welcome to Chatbot-Vchieve-SerMs
           </div>
           <div className="text-center text-lg text-black dark:text-white">
-            <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
+            {/* <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div> */}
             <div className="mb-2 font-bold">
-              Important: Chatbot UI is 100% unaffiliated with OpenAI.
+              Important: Chatbot-Vchieve-SerMs is 100% unaffiliated with OpenAI.
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
@@ -384,6 +384,19 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
               >
                 openai.com
               </a>
+            </div>
+            <div>
+            {t("如果你想尝试更多的新鲜玩意可以访问我的个人博客:  ")}
+              <a
+                href="https://serms.top"
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                serms.top
+              </a>
+            </div>
+            <div>
             </div>
           </div>
         </div>
